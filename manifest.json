@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "20-20-20 Eye Strain Assistant",
+  "version": "1.0",
+  "description": "Blocks screen briefly every 20 minutes to reduce eye strain.",
+  "permissions": ["scripting", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "20-20-20 Assistant"
+  }
+}
