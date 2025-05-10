@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.alarms.create("eyeReminder", { periodInMinutes: 1 }); // ← use 20 when ready
+  chrome.alarms.create("eyeReminder", { periodInMinutes: 20 }); 
 });
 
 chrome.alarms.onAlarm.addListener(() => {
