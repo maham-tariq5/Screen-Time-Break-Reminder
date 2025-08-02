@@ -37,7 +37,7 @@ window.addEventListener("message", function(event) {
 
     // Message prompting user to rest their eyes
     const msg = document.createElement("div");
-    msg.innerText = "👀 Look away for 20 seconds!";
+    msg.innerText = "Look away for 20 seconds!";
     modal.appendChild(msg);
 
     // Countdown timer element
